@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/imageshape"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:text="Q: What is Python?"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/radioOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A: Snake"/>
+
+        <TextView
+            android:id="@+id/radioOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B: Book"/>
+
+        <TextView
+            android:id="@+id/radioOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C: Programming Language"/>
+
+        <TextView
+            android:id="@+id/radioOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D: Student"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/radioGroupOptions">
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FF0000"
+            android:text="Category: Reptiles"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvAnswer"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer: Snake"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

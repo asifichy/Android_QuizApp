@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center"
+    tools:context=".SignupActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textColor="#E4503391"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/showimage"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                android:inputType="textCapWords"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/imageshape"
+                android:layout_gravity="center"
+                android:textColorHint="#E4503391"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:background="@drawable/imageshape"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:inputType="textEmailAddress"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:textColorHint="#E4503391"
+                android:layout_marginTop="8dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:drawableStart="@drawable/ic_phone_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:paddingLeft="10dp"
+                android:background="@drawable/imageshape"
+                android:inputType="phone"
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:textColorHint="#E4503391"
+                android:layout_marginTop="8dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/imageshape"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:textColorHint="#E4503391"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/etRePassword"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/imageshape"
+                android:hint="Re Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:textColorHint="#E4503391"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remember Me"
+                    android:textSize="16sp"
+                    android:id="@+id/cbRememberMe"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="SIGN UP"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFF"
+                android:backgroundTint="#E4503391"
+                android:background="@drawable/imageshape"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvLogIn"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="#E4503391"
+                android:textSize="18dp"
+                android:text="Already have an account? LogIn"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
